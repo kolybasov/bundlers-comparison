@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, Location } from "@reach/router";
 import { Layout, Menu } from "antd";
-import pkg from '../package.json';
+import pkg from '../package.json'
 
 export const AppLayout: React.FC<{ title: string }> = ({ title, children }) => {
   return (
