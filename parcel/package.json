@@ -1,0 +1,38 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve src/index.html -p 3000 --out-dir=./dist",
+    "build": "parcel build src/index.html --out-dir=./dist",
+    "serve": "python3 -m http.server 3000 --directory=./dist",
+    "postinstall": "patch-package"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/loadable__component": "^5.9.0",
+    "@types/reach__router": "^1.2.4",
+    "@types/react-dom": "^16.8.4",
+    "babel-plugin-import": "^1.12.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-webpack-chunkname": "^1.2.0",
+    "cssnano": "^4.1.10",
+    "less": "^3.9.0",
+    "parcel-bundler": "^1.12.3",
+    "patch-package": "^6.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@loadable/component": "^5.10.1",
+    "@reach/router": "^1.2.1",
+    "antd": "^3.20.1",
+    "core-js": "^3.1.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

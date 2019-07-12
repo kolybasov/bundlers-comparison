@@ -1,0 +1,15 @@
+diff --git a/node_modules/parcel-bundler/src/assets/LESSAsset.js b/node_modules/parcel-bundler/src/assets/LESSAsset.js
+index 8791c28..8878c13 100644
+--- a/node_modules/parcel-bundler/src/assets/LESSAsset.js
++++ b/node_modules/parcel-bundler/src/assets/LESSAsset.js
+@@ -22,6 +22,10 @@ class LESSAsset extends Asset {
+       {};
+     opts.filename = this.name;
+     opts.plugins = (opts.plugins || []).concat(urlPlugin(this));
++    opts.javascriptEnabled = true;
++    opts.modifyVars = {
++      "@primary-color": "#00c5cd"
++    };
+     if (this.options.sourceMaps) {
+       opts.sourceMap = {outputSourceFiles: true};
+     }
